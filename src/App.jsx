@@ -38,7 +38,7 @@ export default function App() {
         <div className="img-con pt-5">
           <img
             className="nft-logo"
-            src="/Subject.png"
+            src="src/assets/nft.png"
             alt="Nft Image"
             width="400"
             height="100" />
@@ -120,26 +120,26 @@ export default function App() {
         <div className="flex w-full flex-row gap-8 justify-center">
           <img
             className=""
-            src="/uni.png"
+            src="src/assets/uni.png"
             alt="Nft Image"
             width="150"
             height="100" />
           <img
             className=""
-            src="/poly.png"
+            src="src/assets/poly.png"
             alt="Nft Image"
             width="150"
             height="100" />
 
           <img
             className=""
-            src="/lbank.png"
+            src="src/assets/lbank.png"
             alt="Nft Image"
             width="150"
             height="100" />
           <img
             className=""
-            src="/kucoin.png"
+            src="src/assets/kucoin.png"
             alt="Nft Image"
             width="150"
             height="100" />
@@ -151,33 +151,33 @@ export default function App() {
         <div className="flex w-full flex-row gap-8 justify-center">
           <img
             className=""
-            src="/coin.svg"
+            src="src/assets/coin.svg"
             alt="Nft Image"
             width="150"
             height="100" />
           <img
             className=""
-            src="/news.svg"
+            src="src/assets/news.svg"
             alt="Nft Image"
             width="150"
             height="100" />
 
           <img
             className=""
-            src="/yahoo.svg"
+            src="src/assets/yahoo.svg"
             alt="Nft Image"
             width="150"
             height="100" />
           <img
             className=""
-            src="/digi.svg"
+            src="src/assets/digi.svg"
             alt="Nft Image"
             width="150"
             height="100" />
         </div>
       </section>
 
-    </main><section className=" w-full h-50 mb-8  rounded-3xl p-10 text-center sec-overlay" style={{ backgroundImage: "url(/back.avif)" }}>
+    </main><section className=" w-full h-50 mb-8  rounded-3xl p-10 text-center sec-overlay" style={{ backgroundImage: "url(src/assets/back.avif)" }}>
         <div className=" relative">
           <div>
             <h1 className=" bg p-10 text-center text-2xl">Akila NFT Characters</h1>
