@@ -53,7 +53,7 @@ export default function App() {
             Whitepaper
           </button>
           <div className=" text-right w-80 mt-52">
-            <h1>Special Features</h1>
+            <h1 className="text-2xl">Special Features</h1 >
             <p className="w-80 my-4  text-gray-300 text-xs">
               All special elements of the Astro NFT collection are designed to
               enhance your Everdome experience. Created in collaboration with
@@ -154,7 +154,7 @@ export default function App() {
             src="src/assets/coin.svg"
             alt="Nft Image"
             width="150"
-            height="100" />
+            height="120" />
           <img
             className=""
             src="src/assets/news.svg"
@@ -183,33 +183,33 @@ export default function App() {
             <h1 className=" bg p-10 text-center text-2xl">Akila NFT Characters</h1>
           </div>
           <div className=" flex justify-center">
-            <div className=" py-8 rounded-xl border w-fit m-4 img-con bg-red-600 hvr-bob ">
+            <div className="  rounded-xl border w-fit m-4 img-con bg-red-600 hvr-bob ">
               <img
-                className=""
+                className="mt-14"
                 src="src/assets/nft1.png"
-                alt="src/assets/nft1.png"
+                alt="s"
                 width="250"
                 height="120" />
             </div>
-            <div className=" py-8 rounded-xl border w-fit m-4 img-con bg-yellow-600 hvr-bob ">
+            <div className="rounded-xl border w-fit m-4 img-con bg-yellow-600 hvr-bob ">
               <img
-                className=""
+                className="mt-14"
                 src="src/assets/nft2.png"
                 alt="Nft Image"
                 width="250"
                 height="120" />
             </div>
-            <div className=" py-8 rounded-xl border w-fit m-4 img-con bg-blue-600 hvr-bob ">
+            <div className=" rounded-xl border w-fit m-4 img-con bg-blue-600 hvr-bob ">
               <img
-                className=""
+                className="mt-14"
                 src="src/assets/nft3.png"
                 alt="Nft Image"
                 width="250"
                 height="120" />
             </div>
-            <div className=" py-8 rounded-xl border w-fit m-4 img-con bg-white hvr-bob ">
+            <div className="  rounded-xl border w-fit m-4 img-con bg-white hvr-bob ">
               <img
-                className=""
+                className="mt-14"
                 src="src/assets/nft4.png"
                 alt="Nft Image"
                 width="250"
