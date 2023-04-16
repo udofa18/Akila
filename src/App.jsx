@@ -49,14 +49,14 @@ export default function App() {
         <nav className="  flex text-center items-center pt-5  justify-center ">
           <div className="text-2xl">AKILA NFT</div>
           <div className=" flex items-center ml-96">
-          <div className="flex gap-3 justify-center text-2xl p-5 text-white">
+          <div className="flex gap-8 justify-center text-2xl p-5 text-white mr-20">
            <a className="text-white hvr-buzz-out"><i className="fab fa-facebook"></i>  </a>   
            <a className="text-white hvr-buzz-out"> <i className="fab fa-instagram"></i> </a> 
            <a className="text-white hvr-buzz-out"><i className="fab fa-discord"></i>  </a>
            <a className="text-white hvr-buzz-out"><i className="fab fa-twitter"></i>  </a>
            <a className="text-white hvr-buzz-out"> <i className="fab fa-medium"></i>  </a>
          </div>
-            <button className=" ms-20 border border-orange-300 p-2 rounded-2xl text-2xl">
+            <button className=" ml-96 border border-orange-300 p-2 rounded-2xl text-2xl">
               Mint Akila Nft
             </button>
           </div>
@@ -69,7 +69,7 @@ export default function App() {
               Exclusively for Genesis NFT holders. Our NFT is the First AI NFT
               created for decentralization .........................
             </p>
-            <button className=" ml-12 mt-7 border border-orange-300 p-2 rounded-2xl">
+            <button className=" pl-20 mt-7 border border-orange-300 p-2 rounded-2xl">
               Connect Wallet
             </button>
           </div>
@@ -340,7 +340,7 @@ export default function App() {
                 </h2>
        <form>
         <input className=" p-5 w-80 text-2xl m-7 rounded-full" type="email" placeholder="Drop your email" style={{backgroundColor:"#0b01018c", border:"1px solid orange"}}></input>
-        <button className="p-5 text-2xl m-1 bg-grey-100 rounded-full" type="submit" style={{backgroundColor:"rgba(192, 192, 192, 0.614)",color:"black"}}><i className="fas fa-plus"></i></button>
+        <button className="p-5 text-2xl m-1 bg-grey-100 rounded-full" type="submit" style={{backgroundColor:"rgba(192, 192, 192, 0.614)",color:"black"}}>JOIN</button>
        </form>
        </div>
 
@@ -357,10 +357,10 @@ export default function App() {
            <a className="text-white hvr-buzz-out"><i className="fab fa-twitter"></i>  </a>
            <a className="text-white hvr-buzz-out"> <i className="fab fa-medium"></i>  </a>
       </div>
-      <div>
-      <h1>Subscribe to newsletter</h1>
+      <div className="">
+      <h1 className="text-lg">Subscribe to newsletter</h1>
         <form className="flex  p-5 justify-center gap-3 ">
-          <input className="p-2 border-orange-300 border bg-black rounded-2xl " type="email">
+          <input className="p-2 w-80 border-orange-300 border bg-black rounded-2xl " type="email">
           
           </input>
           <button type="submit" className="bg-transparent	">
@@ -372,6 +372,7 @@ export default function App() {
       <div>
         <h1>2023 Akila ||
 Inc. All rights reserved</h1>
+<p>Designed by <a>https://github.com/udofa18</a></p>
       </div>
 
     </div>
