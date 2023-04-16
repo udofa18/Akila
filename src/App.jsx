@@ -45,33 +45,43 @@ const people = [
 export default function App() {
   return (
     <>
-      <main className="min-h-screen w-full items-center   justify-center ">
-        <nav className="  flex text-center items-center pt-5  justify-center ">
+      <main id="home" className="min-h-screen w-full items-center   justify-center ">
+        <nav className=" w-full flex text-center items-center gap-56 pt-5  justify-center ">
           <div className="text-2xl">AKILA NFT</div>
-          <div className=" flex items-center ml-96">
-          <div className="flex gap-8 justify-center text-2xl p-5 text-white mr-20">
+          
+          <div className="flex gap-8 justify-center text-xl p-5 text-white ">
            <a className="text-white hvr-buzz-out"><i className="fab fa-facebook"></i>  </a>   
            <a className="text-white hvr-buzz-out"> <i className="fab fa-instagram"></i> </a> 
            <a className="text-white hvr-buzz-out"><i className="fab fa-discord"></i>  </a>
            <a className="text-white hvr-buzz-out"><i className="fab fa-twitter"></i>  </a>
            <a className="text-white hvr-buzz-out"> <i className="fab fa-medium"></i>  </a>
          </div>
-            <button className=" ml-96 border border-orange-300 p-2 rounded-2xl text-2xl">
+            <button className="  border border-orange-300 p-2 rounded-2xl text-xl">
               Mint Akila Nft
             </button>
-          </div>
+          
         </nav>
         <section className="flex justify-center my-12">
-          <div className=" mt-40">
+          <div className=" mt-32">
             <h1 className=" text-8xl text-white">AKILA NFT</h1>
 
-            <p className=" text-xl w-80 leading-loose pl-12">
+            <p className=" text-xs w-80 leading-loose">
               Exclusively for Genesis NFT holders. Our NFT is the First AI NFT
               created for decentralization .........................
             </p>
-            <button className=" pl-20 mt-7 border border-orange-300 p-2 rounded-2xl">
+            <button className=" mt-7 border border-orange-300 p-2 rounded-2xl">
               Connect Wallet
             </button>
+            <div className="mt-14">
+              <h1 className="text-2xl">Site Map</h1>
+              <ul className="">
+                <a href="#home" className="flex items-center text-white "><i className="fas fa-angle-right pl-8"></i><li className="pl-4">Home</li></a>
+                <a href="#partners" className="flex items-center text-white "><i className="fas fa-angle-right pl-8"></i><li className="pl-4">Partners</li></a>
+                <a href="#Character" className="flex items-center text-white "><i className="fas fa-angle-right pl-8"></i><li className="pl-4">NFT Characters</li></a>
+                <a href="#team" className="flex items-center text-white "><i className="fas fa-angle-right pl-8"></i><li className="pl-4">Team</li></a>
+                <a href="#whitelist" className="flex items-center text-white "><i className="fas fa-angle-right pl-8"></i><li className="pl-4">Join whitelist</li></a>
+              </ul>
+            </div>
           </div>
           <div className="img-con pt-5">
             <img
@@ -83,7 +93,7 @@ export default function App() {
             />
           </div>
           <div>
-            <p className="text-xl w-80 pl-12  mt-10 text-right ">
+            <p className="text-xs w-80 pl-12 text-gray-300  mt-10 text-right ">
               A limited NFT collection where the token itself doubles as your
               membership to a swamp club for apes. The club is open! Ape in with
               us.
@@ -152,7 +162,7 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section className=" w-full h-50 bg-black items-center">
+        <section  id="partners" className=" w-full h-50 bg-black items-center">
           <div>
             <h1 className="text-slate-500 p-10 text-center text-2xl">
               Supported by:
@@ -228,7 +238,7 @@ export default function App() {
           </div>
         </section>
       </main>
-      <section
+      <section id="Character"
         className=" w-full h-50 mb-8  rounded-3xl p-10 text-center sec-overlay"
         style={{ backgroundImage: "url(src/assets/back.avif)" }}
       >
@@ -281,7 +291,7 @@ export default function App() {
           </button>
         </div>
       </section>
-      <section className="w-full h-50 mb-8 h-full border border-orange-300  rounded-full p-10 text-center  sec-overlay bg-orange-300">
+      <section id="team" className="w-full mb-8 h-max border border-orange-300  rounded-full p-10 text-center  sec-overlay ">
         <div className="relative">
         <div className="max-w-2xl m-auto ">
                 <h2 className="text-3xl font-bold tracking-tight text-orange-400 sm:text-4xl">
@@ -332,9 +342,9 @@ export default function App() {
           </div>
         
       </section>
-      <section className=" w-full h-full py-24 text-center sec-overlay bg-center "style={{ backgroundImage: "url(https://as1.ftcdn.net/v2/jpg/05/53/47/02/1000_F_553470221_u8hS7sAg3JP8juWJEpP8aTI0cyKQCd6k.jpg)", backgroundPosition:"center", backgroundRepeat:"no-repeat",backgroundSize:"cover" }}
+      <section id="whitelist" className=" w-full h-4/5 py-24 text-center sec-overlay bg-center "style={{ backgroundImage: "url(https://as1.ftcdn.net/v2/jpg/05/53/47/02/1000_F_553470221_u8hS7sAg3JP8juWJEpP8aTI0cyKQCd6k.jpg)", backgroundPosition:"center", backgroundRepeat:"no-repeat",backgroundSize:"cover" }}
        >
-       <div className="relative h-screen py-24">
+       <div className="relative py-24">
        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                  Join Whitelist
                 </h2>
@@ -363,7 +373,7 @@ export default function App() {
           <input className="p-2 w-80 border-orange-300 border bg-black rounded-2xl " type="email">
           
           </input>
-          <button type="submit" className="bg-transparent	">
+          <button type="submit" className="bg-slate-700 bg-orange-400	">
             <i className="fas fa-paper-plane"></i>
           </button>
           
@@ -378,7 +388,9 @@ Inc. All rights reserved</h1>
     </div>
   </div>
 </footer>
-    
+    <div className="bottom-0  right-0 m-7" style={{position:"fixed",}}>
+      <a href="#home" className="text-orange-400"><button><i className="fas fa-up-long"></i></button></a>
+    </div>
 
     </>
   );
