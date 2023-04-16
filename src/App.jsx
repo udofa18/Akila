@@ -45,21 +45,18 @@ const people = [
 export default function App() {
   return (
     <>
-      <main className="min-h-screen  items-center  p-10   justify-center ">
-        <nav className=" flex text-center items-center m-auto justify-center ">
-          <div className="">AKILA NFT</div>
+      <main className="min-h-screen w-full items-center   justify-center ">
+        <nav className="  flex text-center items-center pt-5  justify-center ">
+          <div className="text-2xl">AKILA NFT</div>
           <div className=" flex items-center ml-96">
-            <div className=" flex gap-3 text-white ml-48 ">
-              <i class="fa-brands fa-twitter hvr-buzz-out"></i>
-              <i
-                class="fa-brands fa-instagram hvr-buzz-out"
-                aria-hidden="true"
-              ></i>
-              <i class="fa-brands fa-facebook hvr-buzz-out"></i>
-              <i class="fa-brands fa-discord hvr-buzz-out"></i>
-              <i class="fa-brands fa-medium hvr-buzz-out"></i>
-            </div>
-            <button className=" ms-20 border border-orange-300 p-2 rounded-2xl">
+          <div className="flex gap-3 justify-center text-2xl p-5 text-white">
+           <a className="text-white hvr-buzz-out"><i className="fab fa-facebook"></i>  </a>   
+           <a className="text-white hvr-buzz-out"> <i className="fab fa-instagram"></i> </a> 
+           <a className="text-white hvr-buzz-out"><i className="fab fa-discord"></i>  </a>
+           <a className="text-white hvr-buzz-out"><i className="fab fa-twitter"></i>  </a>
+           <a className="text-white hvr-buzz-out"> <i className="fab fa-medium"></i>  </a>
+         </div>
+            <button className=" ms-20 border border-orange-300 p-2 rounded-2xl text-2xl">
               Mint Akila Nft
             </button>
           </div>
@@ -68,7 +65,7 @@ export default function App() {
           <div className=" mt-40">
             <h1 className=" text-8xl text-white">AKILA NFT</h1>
 
-            <p className=" text-xs w-80 leading-loose pl-12">
+            <p className=" text-xl w-80 leading-loose pl-12">
               Exclusively for Genesis NFT holders. Our NFT is the First AI NFT
               created for decentralization .........................
             </p>
@@ -86,7 +83,7 @@ export default function App() {
             />
           </div>
           <div>
-            <p className="text-xs w-80 pl-12  mt-14 ">
+            <p className="text-xl w-80 pl-12  mt-10 text-right ">
               A limited NFT collection where the token itself doubles as your
               membership to a swamp club for apes. The club is open! Ape in with
               us.
@@ -94,7 +91,7 @@ export default function App() {
             <button className=" ml-12 mt-7 border border-orange-300 p-2 rounded-2xl">
               Whitepaper
             </button>
-            <div className=" text-right w-80 mt-52">
+            <div className=" text-right w-80 mt-40">
               <h1 className="text-2xl">Special Features</h1>
               <p className="w-80 my-4  text-gray-300 text-xs">
                 All special elements of the Astro NFT collection are designed to
@@ -284,10 +281,10 @@ export default function App() {
           </button>
         </div>
       </section>
-      <section className="w-full h-50 mb-8 h-full  rounded-3xl p-10 text-center  bg-orange-400">
-        
-        <div className="max-w-2xl m-auto">
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+      <section className="w-full h-50 mb-8 h-full border border-orange-300  rounded-full p-10 text-center  sec-overlay bg-orange-300">
+        <div className="relative">
+        <div className="max-w-2xl m-auto ">
+                <h2 className="text-3xl font-bold tracking-tight text-orange-400 sm:text-4xl">
                   Meet our team:
                 </h2>
                 <p className="mt-6 text-lg leading-8 text-white">
@@ -314,16 +311,16 @@ export default function App() {
                       />
                       </div>
                       <div className="">
-                        <h3 className="text-2xl font-semibold leading-7 tracking-tight text-gray-900 ">
+                        <h3 className="text-2xl font-semibold leading-7 tracking-tight text-orange-400">
                           {person.name}
                         </h3>
-                        <p className="text-sm font-semibold leading-6 text-white p-1 rounded-full m-2 bg-black ">
+                        <p className="text-sm font-semibold leading-6 text-black p-1 rounded-full m-2 bg-orange-400 ">
                           {person.role}
                         </p>
-                       <div className="text-black flex gap-3 text-2xl justify-center">
-                      <i className="fab fa-linkedin hvr-buzz-out"></i>
-                      <i className="fab fa-twitter-square hvr-buzz-out"></i>
-                      <i className="fas fa-envelope hvr-buzz-out"></i>
+                       <div className="text-white flex gap-3 text-2xl justify-center">
+                     <a className="text-white"> <i className="fab fa-linkedin hvr-buzz-out"></i></a>
+                     <a className="text-white"> <i className="fab fa-twitter-square hvr-buzz-out"></i></a>
+                     <a className="text-white"> <i className="fas fa-envelope hvr-buzz-out"></i></a>
                        </div>
                       </div>
                     </div>
@@ -331,6 +328,7 @@ export default function App() {
                 ))}
               </ul>
             </div>
+          </div>
           </div>
         
       </section>
@@ -342,7 +340,7 @@ export default function App() {
                 </h2>
        <form>
         <input className=" p-5 w-80 text-2xl m-7 rounded-full" type="email" placeholder="Drop your email" style={{backgroundColor:"#0b01018c", border:"1px solid orange"}}></input>
-        <button className="p-5 text-2xl m-1 bg-grey-100 rounded-full" type="submit" style={{backgroundColor:"rgba(192, 192, 192, 0.614)",color:"black"}}>Submit</button>
+        <button className="p-5 text-2xl m-1 bg-grey-100 rounded-full" type="submit" style={{backgroundColor:"rgba(192, 192, 192, 0.614)",color:"black"}}><i className="fas fa-plus"></i></button>
        </form>
        </div>
 
@@ -353,14 +351,26 @@ export default function App() {
     <div className="text-center">
       <h1 className="text-3xl">AKILA NFT</h1>
       <div className="flex gap-8 justify-center text-2xl p-5 text-white">
-           <a className="text-white"><i className="fab fa-facebook"></i>  </a>   
-           <a className="text-white"> <i className="fab fa-instagram"></i> </a> 
-           <a className="text-white"><i className="fab fa-discord"></i>  </a>
-           <a className="text-white"><i className="fab fa-twitter"></i>  </a>
-           <a className="text-white"> <i className="fab fa-medium"></i>  </a>
+           <a className="text-white hvr-buzz-out"><i className="fab fa-facebook"></i>  </a>   
+           <a className="text-white hvr-buzz-out"> <i className="fab fa-instagram"></i> </a> 
+           <a className="text-white hvr-buzz-out"><i className="fab fa-discord"></i>  </a>
+           <a className="text-white hvr-buzz-out"><i className="fab fa-twitter"></i>  </a>
+           <a className="text-white hvr-buzz-out"> <i className="fab fa-medium"></i>  </a>
       </div>
       <div>
-        <h1>2021 Luxiwood ||
+      <h1>Subscribe to newsletter</h1>
+        <form className="flex  p-5 justify-center gap-3 ">
+          <input className="p-2 border-orange-300 border bg-black rounded-2xl " type="email">
+          
+          </input>
+          <button type="submit" className="bg-transparent	">
+            <i className="fas fa-paper-plane"></i>
+          </button>
+          
+        </form>
+      </div>
+      <div>
+        <h1>2023 Akila ||
 Inc. All rights reserved</h1>
       </div>
 
