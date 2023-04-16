@@ -5,28 +5,41 @@ import "@fortawesome/fontawesome-free/css/all.css";
 const people = [
   {
     name: 'Leslie Alexander',
-    role: 'Co-Founder / CEO',
+    role: 'Co-Founder',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
-    name: 'Leslie Alexander',
-    role: 'Co-Founder / CEO',
+    name: 'Danny Austin',
+    role: 'Co-Founder',
     imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    ' https://images.unsplash.com/photo-1590086782957-93c06ef21604?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
   },
   {
-    name: 'Leslie Alexander',
-    role: 'Co-Founder / CEO',
+    name: 'Abraham Linkon',
+    role: 'Product Manager',
     imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      'https://images.unsplash.com/photo-1615109398623-88346a601842?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
   },
   {
-    name: 'Leslie Alexander',
-    role: 'Co-Founder / CEO',
+    name: 'sarah Couch',
+    role: 'HR',
     imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
   },
+  {
+    name: 'Xian wu',
+    role: 'Marketing',
+    imageUrl:
+      'https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80',
+  },
+  {
+    name: 'Miccheal Tan',
+    role: 'Community',
+    imageUrl:
+      'https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+  },
+  
   // More people...
 ]
 export default function App() {
@@ -37,14 +50,14 @@ export default function App() {
           <div className="">AKILA NFT</div>
           <div className=" flex items-center ml-96">
             <div className=" flex gap-3 text-white ml-48 ">
-              <i class="fa-brands fa-twitter hvr-wobble-skew"></i>
+              <i class="fa-brands fa-twitter hvr-buzz-out"></i>
               <i
-                class="fa-brands fa-instagram hvr-wobble-skew"
+                class="fa-brands fa-instagram hvr-buzz-out"
                 aria-hidden="true"
               ></i>
-              <i class="fa-brands fa-facebook  hvr-wobble-skew"></i>
-              <i class="fa-brands fa-discord hvr-wobble-skew"></i>
-              <i class="fa-brands fa-medium hvr-wobble-skew"></i>
+              <i class="fa-brands fa-facebook hvr-buzz-out"></i>
+              <i class="fa-brands fa-discord hvr-buzz-out"></i>
+              <i class="fa-brands fa-medium hvr-buzz-out"></i>
             </div>
             <button className=" ms-20 border border-orange-300 p-2 rounded-2xl">
               Mint Akila Nft
@@ -282,29 +295,36 @@ export default function App() {
                   vitae elementum enim vitae ullamcorper suspendisse.
                 </p>
             </div>
-          <div className=" py-24 sm:py-32 ">
-            <div className="mx-auto grid m-auto gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+          <div className=" my-12 sm:py-25 w-full">
+            <div className="mx-auto m-auto px-6 lg:px-4">
               
               <ul
                 role="list"
-                className="grid gap-x-8 gap-y-12 sm:grid-cols-4 sm:gap-y-16 xl:col-span-4"
+                className="flex flex-wrap gap-x-8 gap-y-12 justify-center"
               >
                 {people.map((person) => (
                   <li key={person.name}>
                     <div className="flex items-center gap-x-6">
+                     <div className=" border rounded-full  p-3">
+                  
                       <img
-                        className="h-40 w-40 rounded-full"
+                        className="h-40 w-40 rounded-full "
                         src={person.imageUrl}
                         alt=""
                       />
+                      </div>
                       <div className="">
-                        <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                        <h3 className="text-2xl font-semibold leading-7 tracking-tight text-gray-900 ">
                           {person.name}
                         </h3>
-                        <p className="text-sm font-semibold leading-6 text-indigo-600">
+                        <p className="text-sm font-semibold leading-6 text-white p-1 rounded-full m-2 bg-black ">
                           {person.role}
                         </p>
-                       
+                       <div className="text-black flex gap-3 text-2xl justify-center">
+                      <i className="fab fa-linkedin hvr-buzz-out"></i>
+                      <i className="fab fa-twitter-square hvr-buzz-out"></i>
+                      <i className="fas fa-envelope hvr-buzz-out"></i>
+                       </div>
                       </div>
                     </div>
                   </li>
@@ -314,6 +334,41 @@ export default function App() {
           </div>
         
       </section>
+      <section className=" w-full h-full py-24 text-center sec-overlay bg-center "style={{ backgroundImage: "url(https://as1.ftcdn.net/v2/jpg/05/53/47/02/1000_F_553470221_u8hS7sAg3JP8juWJEpP8aTI0cyKQCd6k.jpg)", backgroundPosition:"center", backgroundRepeat:"no-repeat",backgroundSize:"cover" }}
+       >
+       <div className="relative h-screen py-24">
+       <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                 Join Whitelist
+                </h2>
+       <form>
+        <input className=" p-5 w-80 text-2xl m-7 rounded-full" type="email" placeholder="Drop your email" style={{backgroundColor:"#0b01018c", border:"1px solid orange"}}></input>
+        <button className="p-5 text-2xl m-1 bg-grey-100 rounded-full" type="submit" style={{backgroundColor:"rgba(192, 192, 192, 0.614)",color:"black"}}>Submit</button>
+       </form>
+       </div>
+
+      </section>
+   
+<footer className="p-10">
+  <div>
+    <div className="text-center">
+      <h1 className="text-3xl">AKILA NFT</h1>
+      <div className="flex gap-8 justify-center text-2xl p-5 text-white">
+           <a className="text-white"><i className="fab fa-facebook"></i>  </a>   
+           <a className="text-white"> <i className="fab fa-instagram"></i> </a> 
+           <a className="text-white"><i className="fab fa-discord"></i>  </a>
+           <a className="text-white"><i className="fab fa-twitter"></i>  </a>
+           <a className="text-white"> <i className="fab fa-medium"></i>  </a>
+      </div>
+      <div>
+        <h1>2021 Luxiwood ||
+Inc. All rights reserved</h1>
+      </div>
+
+    </div>
+  </div>
+</footer>
+    
+
     </>
   );
 }
