@@ -101,7 +101,7 @@ export default function App() {
           <div className="img-con pt-5">
             <img
               className="nft-logo"
-              src={logo}
+              src="src/assets/nft.png"
               alt="Nft Image"
               width="400"
               height="100"
