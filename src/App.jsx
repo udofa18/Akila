@@ -1,6 +1,21 @@
 import "hover.css/css/hover-min.css";
 import "@fontsource/rajdhani";
 import "@fortawesome/fontawesome-free/css/all.css";
+import logo from '/src/assets/nft.png';
+import coin from '/src/assets/coin.svg';
+import digi from '/src/assets/digi.svg';
+import kucoin from '/src/assets/kucoin.png';
+import lbank from '/src/assets/lbank.png';
+import news from '/src/assets/news.svg';
+import nft1 from '/src/assets/nft1.png';
+import nft2 from '/src/assets/nft2.png';
+import nft3 from '/src/assets/nft3.png';
+import nft4 from '/src/assets/nft4.png';
+import poly from '/src/assets/poly.png';
+import uni from '/src/assets/uni.png';
+import yahoo from '/src/assets/yahoo.svg';
+
+
 
 const people = [
   {
@@ -73,7 +88,7 @@ export default function App() {
               Connect Wallet
             </button>
             <div className="mt-14">
-              <h1 className="text-2xl">Site Map</h1>
+              <h1 className="text-2xl">Site Maps</h1>
               <ul className="">
                 <a href="#home" className="flex items-center text-white "><i className="fas fa-angle-right pl-8"></i><li className="pl-4">Home</li></a>
                 <a href="#partners" className="flex items-center text-white "><i className="fas fa-angle-right pl-8"></i><li className="pl-4">Partners</li></a>
@@ -86,11 +101,12 @@ export default function App() {
           <div className="img-con pt-5">
             <img
               className="nft-logo"
-              src="src/assets/nft.png"
+              src={logo}
               alt="Nft Image"
               width="400"
               height="100"
             />
+            
           </div>
           <div>
             <p className="text-xs w-80 pl-12 text-gray-300  mt-10 text-right ">
@@ -171,14 +187,14 @@ export default function App() {
           <div className="flex w-full flex-row gap-8 justify-center">
             <img
               className=""
-              src="src/assets/uni.png"
+              src={uni}
               alt="Nft Image"
               width="150"
               height="100"
             />
             <img
               className=""
-              src="src/assets/poly.png"
+              src={poly}
               alt="Nft Image"
               width="150"
               height="100"
@@ -186,14 +202,14 @@ export default function App() {
 
             <img
               className=""
-              src="src/assets/lbank.png"
+              src={lbank}
               alt="Nft Image"
               width="150"
               height="100"
             />
             <img
               className=""
-              src="src/assets/kucoin.png"
+              src={kucoin}
               alt="Nft Image"
               width="150"
               height="100"
@@ -208,14 +224,14 @@ export default function App() {
           <div className="flex w-full flex-row gap-8 justify-center">
             <img
               className=""
-              src="src/assets/coin.svg"
+              src={coin}
               alt="Nft Image"
               width="150"
               height="120"
             />
             <img
               className=""
-              src="src/assets/news.svg"
+              src={news}
               alt="Nft Image"
               width="150"
               height="100"
@@ -223,14 +239,14 @@ export default function App() {
 
             <img
               className=""
-              src="src/assets/yahoo.svg"
+              src={yahoo}
               alt="Nft Image"
               width="150"
               height="100"
             />
             <img
               className=""
-              src="src/assets/digi.svg"
+              src={digi}
               alt="Nft Image"
               width="150"
               height="100"
@@ -240,8 +256,8 @@ export default function App() {
       </main>
       <section id="Character"
         className=" w-full h-50 mb-8  rounded-3xl p-10 text-center sec-overlay"
-        style={{ backgroundImage: "url(src/assets/back.avif)" }}
-      >
+        style={{ backgroundImage: 'url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Evergreen_forest_before_sunset_%28Unsplash%29.jpg/800px-Evergreen_forest_before_sunset_%28Unsplash%29.jpg?20170819020717")'}}>
+
         <div className=" relative">
           <div>
             <h1 className=" bg p-10 text-center text-2xl">
@@ -252,7 +268,7 @@ export default function App() {
             <div className="  rounded-xl border w-fit m-4 img-con bg-red-600 hvr-bob ">
               <img
                 className="mt-14"
-                src="src/assets/nft1.png"
+                src={nft1}
                 alt="s"
                 width="250"
                 height="120"
@@ -261,7 +277,7 @@ export default function App() {
             <div className="rounded-xl border w-fit m-4 img-con bg-yellow-600 hvr-bob ">
               <img
                 className="mt-14"
-                src="src/assets/nft2.png"
+                src={nft2}
                 alt="Nft Image"
                 width="250"
                 height="120"
@@ -270,7 +286,7 @@ export default function App() {
             <div className=" rounded-xl border w-fit m-4 img-con bg-blue-600 hvr-bob ">
               <img
                 className="mt-14"
-                src="src/assets/nft3.png"
+                src={nft3}
                 alt="Nft Image"
                 width="250"
                 height="120"
@@ -279,7 +295,7 @@ export default function App() {
             <div className="  rounded-xl border w-fit m-4 img-con bg-white hvr-bob ">
               <img
                 className="mt-14"
-                src="src/assets/nft4.png"
+                src={nft4}
                 alt="Nft Image"
                 width="250"
                 height="120"
